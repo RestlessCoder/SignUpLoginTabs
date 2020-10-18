@@ -1,0 +1,31 @@
+.button {
+  border:none;
+  width:100%;
+  padding:0.75rem;
+  letter-spacing:3px;
+  font-size:1.65rem;
+  transition: 0.3s;
+  outline:none;
+
+  &--primary {
+    background:$primary-color;
+    color:$white;
+
+    &:hover {
+      background:$darkslategray;
+    }
+  }
+
+  &--text-uppercase {
+    text-transform:uppercase;
+  }
+
+  &--text-bold {
+    font-weight:bold;
+  }
+}
+
+.forget-password-link {
+  margin:1.05rem 0;
+  display:inline-block;
+}

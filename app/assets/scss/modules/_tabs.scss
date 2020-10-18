@@ -1,0 +1,45 @@
+.tabs {
+  display:flex;
+  width:100%;
+
+  &__button {
+      width:50%;
+      background: $darkslategray;
+      border:none;
+      outline:none;
+      color:$lightslategray;
+      padding: 0.8rem 0;
+      transition: 0.4s;
+      font-size:1rem;
+
+      &.is-active {
+        background: $primary-color;
+        color:$white;
+      }
+
+      &:hover {
+        background: rgba($primary-color,0.8);
+        color:$white;
+      }
+  }
+
+  &__panel {
+    display:none;
+
+    &.is-active {
+      display:block;
+    }
+  }
+
+}
+
+.sign-up {
+  text-align:center;
+
+  &__title {
+    color:$white;
+    font-weight:300;
+    font-size:1.6rem;
+    margin:1.85rem 0;
+  }
+}

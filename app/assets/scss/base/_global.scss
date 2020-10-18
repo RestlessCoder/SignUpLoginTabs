@@ -1,0 +1,32 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background:$silver;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color:$primary-color;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    text-decoration: underline;
+    color:$white;
+  }
+}
+
+.text-right {
+  text-align:right;
+}
+
+.relative {
+  position:relative;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <title>Sign Up / Login In</title>
+  <meta name="keywords" content="sign up, login in">
+  <meta name="description" content="Sign Up / Login In Page.">
+
+  <link rel="stylesheet" href="temp/css/styles.css">
+
+</head>
+<body>
+
+  <div class="modal-block">
+    <div class="modal-block__inner">
+      <div class="tabs">
+          <button class="tabs__button is-active" data-tab="1">Sign Up</button>
+          <button class="tabs__button" data-tab="2">Log In</button>
+      </div>
+      <div class="tabs__content">
+
+        <div class="tabs__panel is-active" id="panel-1">
+          <form action="" id="signup-form">
+            <div class="sign-up">
+              <h1 class="sign-up__title">Sign Up for Free</h1>
+
+              <div class="row">
+                <div class="columns medium-6 relative">
+                  <input class="generic__input" id="firstName" type="text" placeholder="First Name *">
+                  <span class="tooltiptext-error"></span>
+                </div>
+                <div class="columns medium-6 relative">
+                  <input class="generic__input" id="lastName" type="text" placeholder="Last Name *">
+                  <span class="tooltiptext-error"></span>
+                </div>
+                <div class="columns medium-12 relative">
+                  <input class="generic__input" id="email" type="email" placeholder="Email Address *">
+                  <span class="tooltiptext-error"></span>
+                </div>
+                <div class="columns medium-12 relative">
+                  <input class="generic__input" id="password" type="password" placeholder="Set A Password *">
+                  <span class="tooltiptext-error"></span>
+                </div>
+                <div class="columns medium-12">
+                  <button class="button button--primary button--text-uppercase button--text-bold" type="submit">GET STARTED</button>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+        <div class="tabs__panel" id="panel-2">
+          <form action="" id="login-form">
+            <div class="sign-up"  id="login-form">
+              <h1 class="sign-up__title">Welcome Back!</h1>
+
+              <div class="row">
+                <div class="columns medium-12 relative">
+                  <input class="generic__input" id="loginEmail" type="email" placeholder="Email Address *">
+                  <span class="tooltiptext-error"></span>
+                </div>
+                <div class="columns medium-12 relative">
+                  <input class="generic__input generic__input--no-btm-margin" id="loginPassword" type="password" placeholder="Password *">
+                  <span class="tooltiptext-error"></span>
+                </div>
+                <div class="columns medium-12 text-right">
+                  <a class="forget-password-link" href="">Forgot Password?</a>
+                </div>
+                <div class="columns medium-12">
+                  <button class="button button--primary button--text-uppercase button--text-bold" type="submit">Log In</button>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/temp/js/app.js"></script>
+
+</body>
+</html>

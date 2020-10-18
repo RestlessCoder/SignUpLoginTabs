@@ -1,0 +1,56 @@
+.generic__input {
+  width:100%;
+  background:$secondary-color;
+  border:1px solid $white;
+  margin-bottom:2rem;
+  padding: 0.25rem 0.65rem;
+  font-size:1.15rem;
+  color:$white;
+
+  &::-webkit-input-placeholder {
+    color:$lightslategray;
+  }
+
+  &:-ms-input-placeholder {
+    color:$lightslategray;
+  }
+
+  &::placeholder {
+    color:$lightslategray;
+  }
+
+  &--no-btm-margin {
+    margin-bottom:0;
+  }
+
+  &.error {
+    outline:2px solid red;
+  }
+}
+
+.tooltiptext-error {
+  background:white;
+  color:$darkslategray;
+  position: absolute;
+  left: 5px;
+  top: 35px;
+  font-size: 12px;
+  padding: 0.5rem 0.75rem;
+  z-index:99;
+  visibility: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 99%;
+    left: 50%;
+    margin-left: -40%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent $white transparent;
+  }
+
+  &.show {
+    visibility:visible;
+  }
+}

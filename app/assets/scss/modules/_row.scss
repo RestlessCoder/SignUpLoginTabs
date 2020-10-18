@@ -1,0 +1,31 @@
+.row {
+  display:flex;
+  flex-wrap:wrap;
+
+  .medium-6 {
+    width:100%;
+    &:nth-of-type(1) {
+      padding-right:0;
+    }
+  }
+
+  .medium-12 {
+    width:100%;
+  }
+
+  @include atSmall {
+
+    .medium-6 {
+      width:50%;
+
+      &:nth-of-type(1) {
+        padding-right:1rem;
+      }
+    }
+
+    .medium-12 {
+      width:100%;
+    }
+  }
+
+}
